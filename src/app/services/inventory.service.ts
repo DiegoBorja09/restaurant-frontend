@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InventoryService {
-  private apiUrl = 'http://localhost:3003/inventory';
+  private apiUrl = 'http://ec2-54-242-117-175.compute-1.amazonaws.com:3003/inventory';
 
   constructor(private http: HttpClient) {}
 
