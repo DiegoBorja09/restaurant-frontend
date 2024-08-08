@@ -1,0 +1,28 @@
+<div class="order-table-container">
+<table mat-table [dataSource]="purchases">
+    <ng-container matColumnDef="ingredientName">
+      <th mat-header-cell *matHeaderCellDef> Ingredient Name </th>
+      <td mat-cell *matCellDef="let purchase"> {{ purchase.ingredient.name }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef> Quantity </th>
+      <td mat-cell *matCellDef="let purchase"> {{ purchase.quantity }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="purchaseDate">
+      <th mat-header-cell *matHeaderCellDef> Purchase Date </th>
+      <td mat-cell *matCellDef="let purchase"> {{ purchase.purchaseDate | date: 'dd/MM/yyyy, h:mm:ss a' }} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  <div class="pagination">
+    <button mat-button (click)="prevPage()" [disabled]="page === 1">Anterior</button>
+    <span>Página {{page}} de {{getTotalPages()}}</span>
+    <button mat-button (click)="nextPage()" [disabled]="(page * limit) >= total">Siguiente</button>
+  </div>
+  
+</div>

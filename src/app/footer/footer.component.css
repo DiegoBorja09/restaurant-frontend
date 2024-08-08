@@ -1,0 +1,9 @@
+/* Asegurar que el footer ocupe el ancho completo y esté alineado al fondo */
+mat-toolbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #007BFF;
+  color: white
+}
+

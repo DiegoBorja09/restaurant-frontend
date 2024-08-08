@@ -1,0 +1,46 @@
+.recipes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+  margin: 0 auto 50px auto; 
+  max-width: 80%; 
+}
+
+.recipe-card {
+  max-width: 300px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.ingredient {
+  display: block; /* Asegúrate de que los elementos se muestren como bloques */
+  margin-bottom: 10px; /* Agregar margen inferior para el espacio entre los elementos */
+}
+
+.recipe-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.recipe-card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(37, 37, 37, 0.818);
+}
+
+mat-card {
+  margin: 16px;
+}
+mat-card-content h3 {
+  font-weight: bold; /* Poner en negrita */
+  margin-top: 10px; /* Agregar margen superior */
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto; /* Empuja el footer al final */
+}

@@ -1,0 +1,96 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+}
+
+.order-table-container {
+    max-width: 80%;
+    /* Ajusta este valor según sea necesario */
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 16px;
+    /* Añadir padding para separar la tabla de los bordes */
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    table-layout: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Añadir sombra a la tabla */
+    border-collapse: collapse;
+    /* Asegurar que las sombras se apliquen correctamente */
+}
+
+th,
+td {
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px 16px;
+    /* Añadir padding a las celdas para mejor apariencia */
+    border: 1px solid #ddd;
+    /* Añadir bordes ligeros a las celdas */
+}
+
+th {
+    background-color: #007BFF !important;
+    /* Color de fondo azul para las celdas de encabezado */
+    color: white !important;
+    /* Color de texto blanco para las celdas de encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Color de fondo gris claro para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* Color de fondo blanco para filas impares */
+}
+
+.rounded-button {
+    border-radius: 25px;
+    /* Añadir bordes redondeados al botón */
+    padding: 8px 16px;
+    /* Ajustar el padding del botón para una mejor apariencia */
+    background-color: #007BFF;
+    /* Color de fondo azul para el botón */
+    color: white;
+    /* Color de texto blanco para el botón */
+    border: none;
+    /* Eliminar el borde del botón */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.rounded-button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    /* Color de fondo azul oscuro al pasar el cursor */
+}
+
+.order-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .order-input {
+
+    align-items: center;
+  }
+  
+  .order-button {
+    height: 56px; /* Ajustar la altura del botón */
+    margin-bottom: 22px;
+    margin-right: 20px;
+  }
+  
+  
