@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RecipeService {
-  private apiUrl = 'http://ec2-54-242-117-175.compute-1.amazonaws.com:3002/kitchen/recipes';
+  private apiUrl = 'http://ec2-54-198-251-106.compute-1.amazonaws.com:3002/kitchen/recipes';
 
   constructor(private http: HttpClient) {}
 
