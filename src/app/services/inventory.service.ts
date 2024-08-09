@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InventoryService {
-  private apiUrl = 'https://myalb-2088132646.us-east-1.elb.amazonaws.com:3003/inventory';
+  private apiUrl = 'http://myalb-2088132646.us-east-1.elb.amazonaws.com:3003/inventory';
 
   constructor(private http: HttpClient) {}
 
